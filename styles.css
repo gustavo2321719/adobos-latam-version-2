@@ -77,10 +77,10 @@ h2 {
 
 .mascot-image {
     position: absolute;
-    bottom: 0px;
-    left: 47%;
+    bottom: 3vw;
+    left: 5%;
     transform: translateX(-50%);
-    width: 60vh;
+    width: 40vh;
     height: auto;
 }
 
@@ -124,14 +124,15 @@ h2 {
 @media (max-width: 950px) {
 
     .mascot-image{
-        width: 60vh;
-        bottom: 0px;
+        width: 40vh;
+        bottom: 10vw;
     }
 }
 @media (max-width: 650px) {
 
     .mascot-image{
-        width: 510px;
+        width: 35vh;
+        bottom: 20vw;
     }
     .container{
         padding-top: 0px;
@@ -166,6 +167,9 @@ h2 {
     }
     #logo {
         width: 100px;
+    }
+    .mascot-image{
+        left: 40%;
     }
 }
 
@@ -205,6 +209,9 @@ h2 {
     .social-links{
         margin-left: 20px;
         margin-left: -20px;
+    }
+    .mascot-image{
+        left: 50%;
     }
 }
 
