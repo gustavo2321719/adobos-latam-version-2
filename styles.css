@@ -133,6 +133,13 @@ h2 {
     .mascot-image{
         width: 510px;
     }
+    .container{
+        padding-top: 0px;
+        width: 300px;
+    }
+    .canva{
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -186,13 +193,7 @@ h2 {
 }
 @media (max-width: 380px) {
 
-    .container{
-        padding-top: 0px;
-        width: 300px;
-    }
-    .canva{
-        margin-top: 0px;
-    }
+    
     .player-container{
         width: 200px;
         height: 350px;
