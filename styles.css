@@ -194,6 +194,10 @@ h2 {
     #logo {
         width: 100px;
     }
+    .mascot-image{
+        bottom: 40vw;
+        left: 40%;
+    }
 }
 @media (max-width: 380px) {
 
@@ -211,25 +215,12 @@ h2 {
         margin-left: -20px;
     }
     .mascot-image{
-        left: 50%;
+        bottom: 20vw;
+        left: 40%;
     }
 }
 
 
-
-
-@media (max-height: 740px) {
-
-    .mascot-image{
-        width: 60vh;
-    }
-}
-@media (max-height: 670px) {
-
-    .mascot-image{
-        width: 50vh;
-    }
-}
 
 .footer {
     background-color: #333;
