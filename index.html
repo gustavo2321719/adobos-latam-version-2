@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobos Radio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="./source/logo.png" alt="Adobos Radio Logo" class="logo">    
+        <div class="canva">
+            <div class="player-container">
+                <h2>EN VIVO</h2>
+                <button class="play-button" onclick="togglePlay()">
+                    <img src="./source/play.png" alt="Play" id="play-icon">
+                </button>
+                <audio id="radio-player" class="audio-player">
+                    <source src="./source/Ado新人類 歌いました.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="social-links">
+                <a href="https://linktr.ee/Adobolatam" target="_blank"> <img src="./source/linked.png" alt="linked"></a>         
+                <a href="https://open.spotify.com/show/16BTrcFzNNwy9LmhdFaxaW?si=2c7bf6eb82e94770" target="_blank"><img src="./source/spotify.png" alt="spotify"></i></a>
+                <a href="https://www.youtube.com/@Adobo-latam" target="_blank"><img src="./source/youtube.png" alt="youtube"></i></a>
+                <a href="https://www.instagram.com/adobolatam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="./source/ig.png" alt="ig"></i></a>
+            </div>
+        </div>
+        <img src="./source/anr.png" alt="Radio Mascot" class="mascot-image">
+
+    </div>
+
+    <script>
+        const audio = document.getElementById('radio-player');
+        const playIcon = document.getElementById('play-icon');
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                playIcon.src = './source/pause.png';
+            } else {
+                audio.pause();
+                playIcon.src = './source/play.png';
+            }
+        };
+    </script>
+</body>
+</html>
