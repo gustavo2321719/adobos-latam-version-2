@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; /* Add this line */
 }
 
 .container {
@@ -55,7 +56,7 @@ h2 {
     margin: 20px 0;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     height: 550px;
-    width: 350px;
+    width: 320px;
 }
 
 .play-button {
@@ -102,7 +103,7 @@ h2 {
     text-decoration: none;
 }
 .social-links img {
-    width: 50px;
+    width: 40px;
 }
 .canva {
     display: flex;
@@ -137,6 +138,33 @@ h2 {
     }
     .player-container{
         width: 270px;
+        height: 400px;
+    }
+    h2 {
+        margin-top: 30px;
+        font-size: 37px; 
+    }
+    .social-links{
+        margin-left: 20px;
+        margin-left: 0px;
+    }
+    .social-links img{
+        margin-left: 20px;
+        width: 30px;
+    }
+    #logo {
+        width: 100px;
+    }
+    .mascot-image{
+        width: 490px;
+        left: 48%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .player-container{
+        width: 230px;
         height: 400px;
     }
     h2 {
