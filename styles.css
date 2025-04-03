@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box; 
 }
 
@@ -13,7 +14,9 @@ body {
     background-image: url('./source/fondo.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,10 +41,7 @@ h2 {
     margin-top: 10px;
 }
 
-.logo {
-    width: 200px;
-    margin-bottom: 20px;
-}
+
 
 .player-container {
     display: flex;
@@ -71,17 +71,18 @@ h2 {
 }
 
 .play-button img {
-    margin-top: 50px;
+    margin-top: 100px;
     color: white;
-    width: 200px;
+    width: 250px;
 }
 
 .mascot-image {
     position: absolute;
     bottom: 0px;
-    left: 55%;
+    left: 47%;
     transform: translateX(-50%);
-    width: 800px;
+    width: 600px;
+    height: auto;
 }
 
 .social-links {
@@ -90,7 +91,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 30px;
 
 }
@@ -101,7 +102,7 @@ h2 {
     text-decoration: none;
 }
 .social-links img {
-    width: 35px;
+    width: 50px;
 }
 .canva {
     display: flex;
@@ -110,27 +111,51 @@ h2 {
     margin-top: 20px;
     align-items: flex-start
 }
+#logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
 @media (max-width: 950px) {
 
     .mascot-image{
-        width: 750px;
+        width: 550px;
+        bottom: 0px;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 650px) {
+
+    .mascot-image{
+        width: 510px;
+    }
+}
+
+@media (max-width: 570px) {
 
     .play-button img{
         margin: 40px;
         width: 150px;
     }
     .player-container{
-        width: 250px;
+        width: 270px;
         height: 400px;
     }
     h2 {
         margin-top: 30px;
-        font-size: 40px; 
+        font-size: 30px; 
     }
     .social-links{
         margin-left: 20px;
+        margin-left: 0px;
+    }
+    .social-links img{
+        margin-left: 20px;
+        width: 30px;
+    }
+    #logo {
+        width: 100px;
+    }
+    .mascot-image{
+        width: 490px;
+        left: 48%;
     }
 }
